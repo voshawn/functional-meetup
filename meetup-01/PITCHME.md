@@ -14,3 +14,17 @@ Getting started with Elixir
 
 ---
 ![Video](https://www.youtube.com/embed/lxYFOM3UJzo)
+
+---
+## Reading Takeaways
+- Abstractions
+- Substitution Model
+- Applicative Vs. Normal Order
+- Conditional & Predicates
+- Square Root Example
+
+---?code=meetup-01/abstractions.ex&lang=elixir
+@[3-9]
+@[11-15]
+
+
