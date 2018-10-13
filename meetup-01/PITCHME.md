@@ -16,15 +16,20 @@ Getting started with Elixir
 ![Video](https://www.youtube.com/embed/lxYFOM3UJzo)
 
 ---
-## Reading Takeaways
-- Abstractions
-- Substitution Model
+## This Week's Reading
+- Abstractions & Substitution
 - Applicative Vs. Normal Order
 - Conditional & Predicates
 - Square Root Example
+---
+### Abstractions & Substitution
 
----?code=meetup-01/abstractions.ex&lang=elixir
++++?code=meetup-01/abstractions.ex&lang=elixir
 @[3-9]
 @[11-15]
 
-
+---
+### Applicative VS Normal Evaluation
++++?code=meetup-01/evaluation_order.ex&lang=elixir
+@[3-9]
+@[11-15]
