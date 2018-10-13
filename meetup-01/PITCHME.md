@@ -1,4 +1,4 @@
----?image=assets/meetup.png
+---?image=assets/meetup.png&size=auto 90%
 Getting started with Elixir
 
 ---
