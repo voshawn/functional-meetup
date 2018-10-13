@@ -1,6 +1,4 @@
 ---?image=assets/meetup.png&size=auto 100% color=#3023AE
-Getting started with Elixir
-
 ---
 ## Introductions
 - Name / About?
@@ -18,8 +16,8 @@ Getting started with Elixir
 ---
 ## This Week's Reading
 - Abstractions & Substitution
-- Applicative Vs. Normal Order
-- Conditional & Predicates
+- Applicative VS Normal Order
+- Conditionals & Predicates
 - Square Root Example
 ---
 ### Abstractions & Substitution
@@ -31,5 +29,11 @@ Getting started with Elixir
 ---
 ### Applicative VS Normal Evaluation
 +++?code=meetup-01/evaluation_order.ex&lang=elixir
-@[3-9]
-@[11-15]
+
+---
+### Conditionals & Predicates
++++?code=meetup-01/conditionals.ex&lang=elixir
+@[2-11]
+@[13-22]
+@[24-30]
+@[32-37]
