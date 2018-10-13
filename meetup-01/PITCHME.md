@@ -12,4 +12,5 @@ Getting started with Elixir
 2. Meet other people who are hyped about FP / Elixir
 3. Build a dope community
 
----?video=https://www.youtube.com/watch?v=lxYFOM3UJzo
+---?video=
+![Video](https://www.youtube.com/embed/video/lxYFOM3UJzo)
