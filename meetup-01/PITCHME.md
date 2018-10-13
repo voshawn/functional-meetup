@@ -1,4 +1,4 @@
----?image=assets/meetup.png&size=auto 90%
+---?image=assets/meetup.png&size=auto 100% color=#3023AE
 Getting started with Elixir
 
 ---
