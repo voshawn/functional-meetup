@@ -3,7 +3,7 @@ defmodule EvaluationOrder do
     IO.puts("Evaluated p!")
   end
 
-  def test_if(x, y) do
+  def test(x, y) do
     if x == 0 do
       0
     else
@@ -12,3 +12,5 @@ defmodule EvaluationOrder do
   end
 end
 
+# What happens when we run:
+# test(0, p)

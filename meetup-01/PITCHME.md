@@ -1,4 +1,6 @@
 ---?image=assets/meetup.png&size=auto 100% color=#3023AE
+Getting Started with Elixir
+
 ---
 ## Introductions
 - Name / About?
@@ -23,7 +25,7 @@
 ### Abstractions & Substitution
 
 +++?code=meetup-01/abstractions.ex&lang=elixir
-@[3-9]
+@[2-9]
 @[11-15]
 
 ---
