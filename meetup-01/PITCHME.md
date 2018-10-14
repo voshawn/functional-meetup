@@ -30,10 +30,14 @@ Getting Started with Elixir
 
 ---
 ### Applicative VS Normal Evaluation
+- Why does this matter?
+- What does Elixir us?
+
 +++?code=meetup-01/evaluation_order.ex&lang=elixir
 
 ---
 ### Conditionals & Predicates
+- When should we use if, cond, case, guards?
 +++?code=meetup-01/conditionals.ex&lang=elixir
 @[2-11]
 @[13-22]
@@ -42,6 +46,7 @@ Getting Started with Elixir
 
 ---
 ### Square Root Example
+
 +++?code=meetup-01/square_root.ex&lang=elixir
 
 +++
@@ -49,4 +54,5 @@ Getting Started with Elixir
 1. Make good_enough?/2 better for large and small numbers
 1. Clean up code
 1. Implement cube root
+1. Could we scope the variables better?
 
