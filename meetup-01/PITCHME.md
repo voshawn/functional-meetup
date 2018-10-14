@@ -39,3 +39,14 @@ Getting Started with Elixir
 @[13-22]
 @[24-30]
 @[32-37]
+
+---
+### Square Root Example
++++?code=meetup-01/square_root.ex&lang=elixir
+
++++
+#### How can we improve this?
+1. Make good_enough?/2 better for large and small numbers
+1. Clean up code
+1. Implement cube root
+
