@@ -51,8 +51,8 @@ Getting Started with Elixir
 
 +++
 #### How can we improve this?
-1. Make good_enough?/2 better for large and small numbers
+1. Make `good_enough?` better for large and small numbers
 1. Clean up code
-1. Implement cube root
 1. Could we scope the variables better?
+1. Implement cube root
 
