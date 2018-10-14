@@ -31,13 +31,13 @@ Getting Started with Elixir
 ---
 ### Applicative VS Normal Evaluation
 - Why does this matter?
-- What does Elixir us?
+- How does Exlir do it?
 
 +++?code=meetup-01/evaluation_order.ex&lang=elixir
 
 ---
 ### Conditionals & Predicates
-- When should we use if, cond, case, guards?
+- When should we use `cond`, `case`, `if`, `guards`?
 +++?code=meetup-01/conditionals.ex&lang=elixir
 @[2-11]
 @[13-22]
