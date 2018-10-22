@@ -6,12 +6,6 @@ Getting Started with Elixir
 - Name / About?
 - What are you trying to get out of this?
 
-+++
-#### Shawn Vo
-1. Learn more, faster
-2. Meet other people who are hyped about FP / Elixir
-3. Build a dope community
-
 ---
 ![Video](https://www.youtube.com/embed/lxYFOM3UJzo)
 
