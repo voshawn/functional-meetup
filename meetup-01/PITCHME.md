@@ -24,30 +24,30 @@ Getting Started with Elixir
 ---
 ### Abstractions & Substitution
 
-+++?code=meetup-01/abstractions.ex&lang=elixir
-@[2-9]
-@[11-15]
++++?code=meetup-01/abstractions.exs&lang=elixir
+@[2-4]
+@[6-9]
 
 ---
 ### Applicative VS Normal Evaluation
 - Why does this matter?
 - How does Exlir do it?
 
-+++?code=meetup-01/evaluation_order.ex&lang=elixir
++++?code=meetup-01/evaluation_order.exs&lang=elixir
 
 ---
 ### Conditionals & Predicates
 - When should we use `cond`, `case`, `if`, `guards`?
-+++?code=meetup-01/conditionals.ex&lang=elixir
-@[2-11]
-@[13-22]
-@[24-30]
-@[32-37]
++++?code=meetup-01/conditionals.exs&lang=elixir
+@[2-9]
+@[11-18]
+@[20-22]
+@[24-25]
 
 ---
 ### Square Root Example
 
-+++?code=meetup-01/square_root.ex&lang=elixir
++++?code=meetup-01/square_root.exs&lang=elixir
 
 +++
 #### How can we improve this?
