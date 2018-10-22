@@ -12,9 +12,10 @@ defmodule SquareRoot do
     |> stop_or_continue(guess, x)
   end
 
-  defp stop_or_continue(enough?, final_guess, _x) when enough? == true do
+  defp stop_or_continue(enough?, final_guess, _x) when enough? do
       final_guess
   end
+
   defp stop_or_continue(_enough?, guess, x) do
     improve(guess, x)
     |> check_good_enough(x)
@@ -25,5 +26,6 @@ defmodule SquareRoot do
   end
 
   defp average(x, y), do: (x + y) / 2
+
 end
 
