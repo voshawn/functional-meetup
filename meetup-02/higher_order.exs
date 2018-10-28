@@ -22,8 +22,8 @@ defmodule Summation do
   defp inc(x), do: x + 1
 
   def pi_sum(a, b) do
-    # Example using anonymous functions
-    sum( fn x -> 1 / (x * (x + 2)) end, a, fn x -> x + 4 end, b)
+    # Example using anonymous functions (lambda)
+    sum(fn x -> 1 / (x * (x + 2)) end, a, fn x -> x + 4 end, b)
   end
 end
 
