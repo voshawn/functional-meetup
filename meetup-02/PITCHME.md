@@ -40,6 +40,7 @@ Ramping up with Elixir
 
 +++?code=meetup-02/data_abstraction.exs&lang=elixir
 
+---
 ### Hierarchical Data
 - What is the Closure Property?
 - Implement functions that maps over list and maps over trees (list containing lists)
