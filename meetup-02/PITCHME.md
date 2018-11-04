@@ -32,3 +32,23 @@ Ramping up with Elixir
     2. Procedures as return values
 
 +++?code=meetup-02/higher_order.exs&lang=elixir
+
+---
+### Data Abstraction
+- What is meant by data?
+- Implement add-rational.
+
++++?code=meetup-02/data_abstraction.exs&lang=elixir
+
+### Hierarchical Data
+- What is the Closure Property?
+- Implement functions that maps over list and maps over trees (list containing lists)
+- Implement length and count-leaves
+
++++?code=meetup-02/hierarchical_data.exs&lang=elixir
+@[4-10]
+@[12-20]
+@[22-26]
+@[28-35]
+
+
