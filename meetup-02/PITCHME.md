@@ -5,6 +5,8 @@ Ramping up with Elixir
 ## Discussion Topics
 - Recursion
 - Higher order procedures
+- Data Abstraction
+- Hierarchical Data
 
 ---
 ### Recursion

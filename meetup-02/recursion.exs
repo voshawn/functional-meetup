@@ -14,7 +14,7 @@ defmodule Factorial do
   end
 
   defp fact_iter(product, counter, max) do
-    fact_iter( counter * product, counter + 1,  max)
+    fact_iter(counter * product, counter + 1,  max)
   end
 end
 
