@@ -21,7 +21,19 @@ Getting Cozy with Elixir and Hot Cocoa
 
 ---
 ### 2.4 Multiple Representations for Abstract Data
+- What do generic procedures allow you to do?
+- What are type tags?
+- What is data-directed programming?
+- How is message passing different than DDP?
+
++++?code=meetup-03/complex_numbers_tagged.exs&lang=elixir
+
++++?code=meetup-03/complex_numbers_DDP.exs&lang=elixir
 
 ---
 ### 2.5 Systems with Generic Operations
+- How would we implement generic arithmetic operations on different number
+  types?
+- What is coersion and how can we use it to implement cross-type operations?
+- How does a hierarchy of types simplify coersion?
 
