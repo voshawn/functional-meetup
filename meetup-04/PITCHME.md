@@ -38,4 +38,5 @@ The New Years Resolution
 - Should we order food?
 - Should we get stickers?
 - Do we want to meet at other spaces?
-- Feedback?
+- Feedback
+- Plan next meeting
