@@ -7,7 +7,7 @@ The New Years Resolution
 - 3.1 Assignment and Local State
 - 3.2 The Environment Model of Evaluation
 - 3.3 Modeling with Mutable Data
-
+- Community Building
 
 ---
 ### 3.1 Assignment and Local State
@@ -32,3 +32,10 @@ The New Years Resolution
 - How do we make an efficient queue in elixir?
 
 +++?code=meetup-04/queue.exs&lang=elixir
+
+### Community Building
+- How is the timing? Should we do later?
+- Should we order food?
+- Should we get stickers?
+- Do we want to meet at other spaces?
+- Feedback?
