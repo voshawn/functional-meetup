@@ -35,8 +35,10 @@ The New Years Resolution
 
 ### Community Building
 - How is the timing? Should we do later?
+- Do we want to meet at other spaces?
+- Co-Organizers Volunteers?
+    - Agenda Building, Recruiting, Sponsorships, etc...
 - Should we order food?
 - Should we get stickers?
-- Do we want to meet at other spaces?
 - Feedback
 - Plan next meeting
