@@ -1,5 +1,5 @@
 ---?image=assets/meetup.png&size=auto 100% color=#3023AE
-@snap[midpoint]
+@snap[west]
 ##### Falling in love with Elixir
 @snapend
 
