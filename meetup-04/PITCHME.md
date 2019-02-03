@@ -33,6 +33,7 @@ The New Years Resolution
 
 +++?code=meetup-04/queue.exs&lang=elixir
 
+---
 ### Community Building
 - How is the timing? Should we do later?
 - Do we want to meet at other spaces?
