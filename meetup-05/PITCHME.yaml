@@ -7,7 +7,7 @@ logo : assets/logo.png
 logo-position : bottom-right
 theme : black
 theme-override : assets/PITCHME.css
-highlight : hybrid
+highlight : ir-black
 
 # Behavior
 transition : none
