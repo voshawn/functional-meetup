@@ -1,24 +1,24 @@
 ---?image=assets/meetup.png&size=auto 100% color=#3023AE
 @snap[midpoint]
-@color[black](### Falling in love with Elixir)
+@color[black]( ### <h3> Falling in love with Elixir </h3>)
 @snapend
 
 ---
 ### Discussion Topics
-@ol[list-content-verbose]
 - Show and Tell
 - 3.4 Concurrency: Time Is of the Essence
 - 3.5 Streams
 - Community Building
-@olend
 
 
 ---
 ### 3.4 Concurrency
+@ul[list-content-verbose]
 - How does local state help us organize computational models of a system?
 - Why does introducing assigment break the subsitution model?
 - How does this define functional vs imperative programming?
 - Create the bank account using state with Elixir?
+@ulend
 
 +++?code=meetup-05/bank.exs&lang=elixir
 
