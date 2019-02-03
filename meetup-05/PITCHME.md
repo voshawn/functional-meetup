@@ -20,7 +20,7 @@
 - Create the bank account using state with Elixir?
 @ulend
 
-+++?code=meetup-05/concurrency.exs&lang=elixir @title[Concurrency]
++++?code=meetup-05/concurrency.exs&lang=elixir
 
 ---
 ### 3.5 Streams
