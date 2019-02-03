@@ -1,6 +1,6 @@
 ---?image=assets/meetup.png&size=auto 100% color=#3023AE
 @snap[midpoint]
-@color[black]( ### <h3> Falling in love with Elixir </h3>)
+##### Falling in love with Elixir
 @snapend
 
 ---
