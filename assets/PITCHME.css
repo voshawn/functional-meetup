@@ -39,24 +39,15 @@ body {
   margin: 0 0 20px 0;
   color: #fff;
   font-family:  "Lato", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
-.reveal h1 {
-  font-size: 2.5em; }
 
-.reveal h2 {
-  font-size: 1.6em; }
-
-.reveal h3 {
-  font-size: 1.3em; }
-
-.reveal h4 {
-  font-size: 1em; }
-
-.reveal h1 {
-  text-shadow: none; }
+.list-content-verbose li {
+  font-size: 0.8em;
+  margin:0 0 40px 0;
+}
