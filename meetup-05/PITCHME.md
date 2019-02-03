@@ -1,16 +1,18 @@
 ---?image=assets/meetup.png&size=auto 100% color=#3023AE
 @snap[midpoint]
-###Falling in love with Elixir
+@color[black](
+### Falling in love with Elixir
+)
 @snapend
 
 ---
 ### Discussion Topics
-@snap[west list-content-verbose]
+@css[list-content-verbose](
 - Show and Tell
 - 3.4 Concurrency: Time Is of the Essence
 - 3.5 Streams
 - Community Building
-@snapend
+)
 
 ---
 ### 3.4 Concurrency
