@@ -14,13 +14,14 @@
 ---
 ### 3.4 Concurrency
 @ul[list-content-verbose]
-- How does local state help us organize computational models of a system?
-- Why does introducing assigment break the subsitution model?
-- How does this define functional vs imperative programming?
-- Create the bank account using state with Elixir?
+- In addition to making programs more modular, concurrent computation can provide a speed advantage over sequential computation.
+- When several processes **share a common state variable**, they may become **interleaved** and produce unexpected results.
+- **Serialization** creates distinguished sets of procedures such that only one execution of a procedure in each serialized set is permitted to happen at a time.
+- Serializers can be implemented with a **mutex**. Once a mutex has been acquired, no other acquire operations on that mutex may proceed until the mutex is released.
+- Deadlock is always a danger in systems that provide concurrent access to multiple shared resources.
 @ulend
 
-+++?code=meetup-05/concurrency.exs&lang=elixir&title=Concurrency
++++?code=meetup-05/bank.exs&lang=elixir&title=GenServers are Serializers?
 
 ---
 ### 3.5 Streams
