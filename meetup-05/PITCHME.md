@@ -6,10 +6,17 @@
 ---
 ### Discussion Topics
 - Show and Tell
+- Elixir News
 - 3.4 Concurrency: Time Is of the Essence
 - 3.5 Streams
 - Community Building
 
+---
+### Elixir News
+@ul[list-content-verbose]
+- Elixir 1.8 release last month
+- There is only one last major feature planned for upcoming Elixir versions, which is the addition of `mix release` to Elixir itself, streamlining the experience provided by packages like distillery. With `mix release`, a developer can bundle the VM and all compiled code in a single directory, which can then be packaged and sent to production.
+@ulend
 
 ---
 ### 3.4 Concurrency
@@ -25,13 +32,15 @@
 
 ---
 ### 3.5 Streams
-- Whats the difference between subsitution and environment model?
-- What are the two rules to summarize the environment model of procedure
-  application?
+@ul[list-content-verbose]
+- Streams lets us model systems that have state without ever using assignment or mutable data.
+- Stream allows one to use sequence manipulations without incurring the costs of manipulating sequences as lists because they construct just enough that's needed for the consumer automatically.
+- Streams are inplmented teewith `delay` and `force`: Delay must package an expression so that it can be evaluated later on demand. Force simply calls the procedure (of no arguments) produced by delay.
+- We can model a changing quantity, such as the local state of some object, using a stream that represents the time history of successive states.
+- How might we create the bank account with streams in Elixir?
+@ulend
 
-
-
-+++?code=meetup-05/queue.exs&lang=elixir
++++?code=meetup-05/streams.exs&lang=elixir
 
 ---
 ### Community Building

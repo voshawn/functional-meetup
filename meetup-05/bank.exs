@@ -7,7 +7,7 @@ defmodule BankAccount do
   end
 
   def handle_call({:withdraw, b}, _from, %{balance: a} = state) when a - b < 0 do
-    {:reply, "no can do", state}
+    {:reply, "Insufficient Funds", state}
   end
 
   def handle_call({:withdraw, amount}, _from, state) do
