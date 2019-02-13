@@ -40,7 +40,7 @@
 - How might we create the bank account with streams in Elixir?
 @ulend
 
-+++?code=meetup-05/stream.exs&lang=elixir
++++?code=meetup-05/stream.exs&lang=elixir&title=Elixir Steams don't support 'tail' natively.
 
 ---
 ### Community Building
