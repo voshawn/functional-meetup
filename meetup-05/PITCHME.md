@@ -35,12 +35,12 @@
 @ul[list-content-verbose]
 - Streams lets us model systems that have state without ever using assignment or mutable data.
 - Stream allows one to use sequence manipulations without incurring the costs of manipulating sequences as lists because they construct just enough that's needed for the consumer automatically.
-- Streams are inplmented teewith `delay` and `force`: Delay must package an expression so that it can be evaluated later on demand. Force simply calls the procedure (of no arguments) produced by delay.
+- Streams are inplmented with `delay` and `force`: Delay must package an expression so that it can be evaluated later on demand. Force simply calls the procedure (of no arguments) produced by delay.
 - We can model a changing quantity, such as the local state of some object, using a stream that represents the time history of successive states.
 - How might we create the bank account with streams in Elixir?
 @ulend
 
-+++?code=meetup-05/streams.exs&lang=elixir
++++?code=meetup-05/stream.exs&lang=elixir
 
 ---
 ### Community Building
