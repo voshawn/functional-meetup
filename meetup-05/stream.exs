@@ -13,6 +13,7 @@ defmodule BankAccount do
 end
 # BankAccount.withdraw(100, Stream.cycle([5,10,15]))
 
+
 defmodule StreamSplit do
   @doc """
   This function is a combination of `Enum.take/2` and `Enum.drop/2` returning

@@ -4,3 +4,4 @@
 1. [Getting Cozy with Elixir and Hot Cocoa](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-03)
 1. [New Years Resolution](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-04)
 1. [Falling in love with Elixir](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-05)
+1. [Code Evaluation](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-06)
