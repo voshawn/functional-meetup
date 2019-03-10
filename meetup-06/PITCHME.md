@@ -30,7 +30,7 @@
 - The evaluator needs to define external syntax of expressions and data structures that the evaluator manipulates internally.
 @ulend
 
----?code=meetup-06/eval.exs&lang=elixir&title=Kinda Hacky Eval and Apply in Elixir
+---?code=meetup-06/eval.exs&lang=elixir&title=Kinda Hacky Evaluator Elixir
 
 ---
 ### 4.2 Lazy Evaluation
