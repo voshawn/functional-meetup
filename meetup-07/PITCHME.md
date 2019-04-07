@@ -27,7 +27,7 @@
 - Ordinary expressions will return a value, never terminate, or return an error.
 - Nondeterministic expressions can result in a dead-end, in which case evaluation must backtrack to a previous choice point.
 - Nondeterministic expressions can also have more than one correct answer, depending on how you handle the choice points.
-- Logic puzzles and NLP are some examples of problems that can be solved nondeterministically.
+- Logic puzzles and NLP are some examples of problems thhat can be solved like this.
 - The special form `amb` (ambiguous) is used to implement nondeterminism.
 - It is not random, it only models a nondeterministic choice. Typically the tree of choices is searched in a predictable order.
 @ulend
