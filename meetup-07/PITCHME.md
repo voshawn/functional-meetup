@@ -18,7 +18,7 @@
 ### Elixir News
 @ul[list-content-verbose]
 - Scenic
-- 
+- Mix Formatter
 @ulend
 
 ---
@@ -40,14 +40,8 @@
 ---?code=meetup-07/puzzle.exs&lang=elixir&title=Logic Puzzle With Spawn
 
 ---
-### 4.2 Lazy Evaluation
+### 4.4 Logic Programming
 @ul[list-content-verbose]
-- Applicative Order: all arguments are evaluated when the procedure is applied.
-- Normal Order (Lazy Evaluation): delay evaluation of procedure arguments until the actual argument values are needed.
-- To change the evaluator to Normal Order:
-    - The interpreter must determine which arguments are to be evaluated and which are to be delayed.
-    - The delayed arguments are not evaluated; instead, they are transformed into objects called thunks.
-    - Thunks are "Forced" (evaluated) when the value is needed:
 @ulend
 
 
