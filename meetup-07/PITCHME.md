@@ -37,7 +37,7 @@
 @ul[list-content-verbose]
 - If we had infinite processors, execution would proceed sequentially, until an `amb` expression is encountered. Then, more processors would be allocated to continue all of the parallel executions implied by the choice. Each processor would proceed sequentially as if it were the only choice, until it either terminates by encountering a failure, or it further subdivides, or it finishes.
 - If we had limited processors, we would have to go down the branches sequentially. One systematic way of doing that is `depth-first search`.
-- The execution procedures for the ordinary evaluator take one argument: the environment of execution. The execution procedures in the `amb` evaluator take three arguments: the environment, thhe success continuation, and the failure continuation.
+- The execution procedures for the ordinary evaluator take one argument: the environment of execution. The execution procedures in the `amb` evaluator take three arguments: the environment, the success continuation, and the failure continuation.
 @ulend
 
 ---?code=meetup-07/puzzle.exs&lang=elixir&title=Logic Puzzle with Spawn (many processes)
