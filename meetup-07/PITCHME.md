@@ -22,7 +22,7 @@
 @ulend
 
 ---
-### 4.3 Nondeterministic Computing
+### 4.3 Nondeterministic Computing (What is it?)
 @ul[list-content-verbose]
 - Ordinary expressions will return a value, never terminate, or return an error.
 - Nondeterministic expressions can result in a dead-end, in which case evaluation must backtrack to a previous choice point.
@@ -33,7 +33,7 @@
 @ulend
 
 ---
-### 4.3 Nondeterministic Computing
+### 4.3 Nondeterministic Computing (How to implement)
 @ul[list-content-verbose]
 - If we had infinite processors, execution would proceed sequentially, until an `amb` expression is encountered. Then, more processors would be allocated to continue all of the parallel executions implied by the choice. Each processor would proceed sequentially as if it were the only choice, until it either terminates by encountering a failure, or it further subdivides, or it finishes.
 - If we had limited processors, we would have to go down the branches sequentially. One systematic way of doing that is `depth-first search`.
@@ -43,10 +43,23 @@
 ---?code=meetup-07/puzzle.exs&lang=elixir&title=Logic Puzzle with Spawn (many processes)
 
 ---
-### 4.4 Logic Programming
+### 4.4 Logic Programming (What is it?)
 @ul[list-content-verbose]
+- Logic programming focuses more on "what is" rather than "how to". This is powerful because a single "what is" fact may have multiple "how to" components (i.e you can model relationships that are not use unidirectional (inputs -> outputs)). 
+- Interpreters for this kind of language is more complicated than imperative languages, but share many common features including the `eval` and `apply` loop.
+- A query language is a type of logic programming because it is good for information retrevial.
+- You can write Primative queries, Compound queries (and, or, not), Rules (abstractions of queries)
+- Query languages use `pattern matching` for simple and compound queries and `unification` to implement rules.
+- Logic programming is not exactly mathematical logic because it still iterprets the logic procedually.
 @ulend
 
+---
+### 4.4 Logic Programming (How to implement?)
+@ul[list-content-verbose]
+- Frames specifies bindings for pattern variables. A stream of frames is referenced agaisnt assertions (data) in the database to see if there are matches. Matches are extended (fill in variables) to create the output stream.
+- Driver loop takes in input, routes to assertion handler or `qeval` , and displays output.
+- `qeval` takes as inputs a query and a stream of frames, and it returns a stream of extended frames.
+@ulend
 
 ---
 ### Community Building
