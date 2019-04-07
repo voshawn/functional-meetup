@@ -32,6 +32,7 @@
 - It is not random, it only models a nondeterministic choice. Typically the tree of choices is searched in a predictable order.
 @ulend
 
+---
 ### 4.3 Nondeterministic Computing
 @ul[list-content-verbose]
 - If we had infinite processors, execution would proceed sequentially, until an `amb` expression is encountered. Then, more processors would be allocated to continue all of the parallel executions implied by the choice. Each processor would proceed sequentially as if it were the only choice, until it either terminates by encountering a failure, or it further subdivides, or it finishes.
