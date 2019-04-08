@@ -45,7 +45,7 @@
 ---
 ### 4.4 Logic Programming (What is it?)
 @ul[list-content-verbose]
-- Logic programming focuses more on "what is" rather than "how to". This is powerful because a single "what is" fact may have multiple "how to" components (i.e you can model relationships that are not use unidirectional (inputs -> outputs)). 
+- Logic programming focuses more on "what is" rather than "how to". This is powerful because a single "what is" fact may have multiple "how to" components (i.e you can model relationships that are not just unidirectional (inputs -> outputs)). 
 - Interpreters for this kind of language is more complicated than imperative languages, but share many common features including the `eval` and `apply` loop.
 - A query language is a type of logic programming because it is good for information retrevial.
 - You can write Primative queries, Compound queries (and, or, not), Rules (abstractions of queries)
@@ -56,9 +56,9 @@
 ---
 ### 4.4 Logic Programming (How to implement?)
 @ul[list-content-verbose]
-- Frames specifies bindings for pattern variables. A stream of frames is referenced agaisnt assertions (data) in the database to see if there are matches. Matches are extended (fill in variables) to create the output stream.
-- Driver loop takes in input, routes to assertion handler or `qeval` , and displays output.
-- `qeval` takes as inputs a query and a stream of frames, and it returns a stream of extended frames.
+- Frames specifies bindings for pattern variables. A stream of frames is referenced against assertions (data) in the database to see if there are matches. If so, frames are extended (fill in variables) to create the output stream.
+- Driver loop takes in input, routes to an assertion handler or a `qeval` function, and displays output.
+- `qeval` behaves similar to `eval`, It takes as inputs a query and a stream of frames, and returns a stream of extended frames.
 @ulend
 
 ---
