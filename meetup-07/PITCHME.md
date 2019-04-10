@@ -25,7 +25,7 @@
 @ul[list-content-verbose]
 - Ordinary expressions will return a value, never terminate, or return an error. Nondeterministic expressions can result in a dead-end, in which case evaluation must backtrack to a previous choice point.
 - Nondeterministic expressions can also have more than one correct answer, depending on how you handle the choice points.
-- Logic puzzles and NLP are some examples of problems thhat can be solved like this.
+- Logic puzzles and NLP are some examples of problems that can be solved like this.
 - The special form `amb` (ambiguous) is used to implement nondeterminism.
 - It is not random, it only models a nondeterministic choice. Typically the tree of choices is searched in a predictable order.
 @ulend
@@ -43,11 +43,11 @@
 ---
 ### 4.4 Logic Programming (What is it?)
 @ul[list-content-verbose]
-- Logic programming focuses more on "what is" rather than "how to". This is powerful because a single "what is" fact may have multiple "how to" components (i.e you can model relationships that are not just unidirectional (inputs -> outputs)). 
+- Logic programming focuses more on "what is" rather than "how to". This is powerful because a single "what is" fact may have multiple "how to" components (i.e you can model relationships that are not just unidirectional (inputs -> outputs)).
 - A query language is a type of logic programming because it is good for information retrevial.
 - You can write Primative queries, Compound queries (and, or, not), Rules (abstractions of queries)
 - Query languages use `pattern matching` for simple and compound queries and `unification` to evaluate rules.
-- Logic programming is not exactly mathematical logic because it still iterprets the logic procedually.
+- Logic programming is not exactly mathematical logic because it still interprets the logic procedually.
 @ulend
 
 ---
@@ -60,5 +60,11 @@
 
 ---
 ### Community Building
-- Feedback
-- Plan next meeting
+- New Direction / Potential Topics
+    - Testing
+    - Macros
+    - Deployment
+    - IoT / Nerves
+    - Channels / Phoenix
+    - Streaming / Membrane
+    - Embedded UI / Scenic
