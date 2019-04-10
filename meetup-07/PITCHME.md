@@ -18,7 +18,6 @@
 ### Elixir News
 @ul[list-content-verbose]
 - Scenic
-- Mix Formatter
 @ulend
 
 ---
