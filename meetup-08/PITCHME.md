@@ -1,7 +1,7 @@
 ---
 @snap[west]
-## NYC Functional Programming Reading Group
-##### Event Sourcing and CQRS
+#### NYC Functional Programming Reading Group
+##### @color[#FFF](Event Sourcing and CQRS)
 @snapend
 
 ---

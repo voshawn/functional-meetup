@@ -5,3 +5,5 @@
 1. [New Years Resolution](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-04)
 1. [Falling in love with Elixir](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-05)
 1. [Code Evaluation](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-06)
+1. [Nondeterministic Computing + Logic Programming](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-07
+1. [Event Sourcing and CQRS](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-08
