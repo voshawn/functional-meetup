@@ -1,4 +1,4 @@
----?image=assets/meetup.png&size=auto 100% color=#3023AE
+---color=#3023AE
 @snap[west]
 ##### Event Sourcing and CQRS
 @snapend
