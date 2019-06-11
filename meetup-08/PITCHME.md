@@ -58,6 +58,34 @@
 - When not to use
 @ulend
 
+### Glossary - Events
+@ul[list-content-verbose]
+- *Event sourcing:* Application state changes are modelled as a stream of domain events. An aggregate’s current state is built by replaying its domain events: `f(state, event) => state`
+- *Domain events:* Indicate something of importance has occurred within a domain model. They are named in the past tense: account registered, funds transferred, fraudulent activity detected. Events may be consumed by multiple event handlers.
+- *Event handler:* Receives every event persisted to the event store. The event store remembers the handler's last seen event to support restarts. The handler must acknowledge receipt of each processed event.
+@ulend
+
+---
+### Glossary
+@ul[list-content-verbose]
+- *Command:* Used to instruct an application to do something and named in the imperative: register account, transfer funds, mark fraudulent activity. A command is dispatched to its corresponding handler using a router.
+- *Router:* Maps a command to its corresponding handler function or aggregate module.
+@ulend
+
+---
+### Glossary
+@ul[list-content-verbose]
+- *Aggregate:*  Defines a consistency boundary for transactions and concurrency. Aggregates should also be viewed from the perspective of being a "conceptual whole". They are used to enforce invariants in a domain model and to guard against business rule violations. An aggregate is comprised of entities and value objects. All access to the aggregate must go through the entity defined as the aggregate root.
+- *Process manager:* Coordinates one or more aggregates: receives events and dispatches commands. May also track state necessary to route commands to the appropriate aggregate.
+@ulend
+
+---
+### Glossary
+@ul[list-content-verbose]
+- *Projection:* Read model built to support a specific query, often using denormalised data. Projections are cheap and easy to build and rebuild.
+- *Projector:*  An event handler that populates a read model projection from data contained within the events it is interested in. Projectors run asynchronously and are decoupled from each other.
+@ulend
+
 ---
 ### Giftcard Demo
 - `git clone https://github.com/slashdotdash/gift-card-demo.git`
