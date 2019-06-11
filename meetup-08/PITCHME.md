@@ -1,6 +1,7 @@
 ---color=#3023AE
 @snap[west]
-##### Event Sourcing and CQRS
+## NYC Functional Programming Reading Group
+##### Meetup 8: Event Sourcing and CQRS
 @snapend
 
 ---
