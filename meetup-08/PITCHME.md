@@ -60,6 +60,6 @@
 
 ---
 ### Giftcard Demo
+- `git clone https://github.com/slashdotdash/gift-card-demo.git`
 - Commanded Library
 - Phoenix LiveView
-`git clone https://github.com/slashdotdash/gift-card-demo.git`
