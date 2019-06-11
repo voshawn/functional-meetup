@@ -40,6 +40,7 @@
 - CQRS
 @ulend
 
+---
 ### Event Sourcing and CQRS
 @ul[list-content-verbose]
 - Images / Diagrams
