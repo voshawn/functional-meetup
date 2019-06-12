@@ -45,7 +45,7 @@
 ### Command Query Responsibility Segregation (CQRS)
 @ul[list-content-verbose]
 - While ES is great for traceability, simple queries can become very complex and inefficient.
-- That's why ES isused in combination with CQRS, a pattern that handles reads and writes in the system with two very distinct entities.
+- That's why ES is used in combination with CQRS, a pattern that handles reads and writes in the system with two very distinct entities.
 - ![EES/CQRS](https://cdn-images-1.medium.com/max/2600/1*2IUbZocoe_zT-mSec-crmg.jpeg)
 @ulend
 
