@@ -18,7 +18,7 @@
 @ul[list-content-verbose]
 - Elixir 1.9 is out!
     - Main feature is Releases. This is supposed to be the last core feature. Elixir is now "complete".
-- ![Releases](meetup-08/releases.png)
+- ![Releases](/meetup-08/releases.png)
 @ulend
 
 ---
