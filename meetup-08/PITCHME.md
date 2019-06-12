@@ -52,9 +52,10 @@
 ---
 ### Projection
 @ul[list-content-verbose]
-- ![Projection](https://cdn-images-1.medium.com/max/1600/1*1oUxSMaXHVuETYiWAG4rcQ.jpeg)
 - `BankAccount` is called a **projection** of the event stream.
 @ulend
+
+---?image=https://cdn-images-1.medium.com/max/1600/1*1oUxSMaXHVuETYiWAG4rcQ.jpeg&size=contain
 
 ---
 ### Asynchronous / Availability
