@@ -1,7 +1,7 @@
 ---
 @snap[west]
 ###### NYC Functional Programming
-#### @color[#FFF](Event Sourcing and CQRS)
+### @color[#FFF](Event Sourcing and CQRS)
 @snapend
 
 ---
@@ -18,8 +18,8 @@
 @ul[list-content-verbose]
 - Elixir 1.9 is out!
     - Main feature is Releases. This is supposed to be the last core feature. Elixir is now "complete".
+- ![Releases](meetup-08/releases.png)
 @ulend
-![Releases](meetup-08/releases.png)
 
 ---
 ### Show and Tell
@@ -34,7 +34,7 @@
         3. Behind load balancer (rolling deployments) 
 
 ---
-### Event Sourcing and CQRS
+### Event Sourcing (ES)
 @ul[list-content-verbose]
 - The mantra of ES is that the state of a system is given by all the events that lead to that state.
 - Those events can never be modified once emitted, and are stored in an append-only storage called the event store.
@@ -42,21 +42,54 @@
 @ulend
 
 ---
-### Event Sourcing and CQRS
+### Command Query Responsibility Segregation (CQRS)
 @ul[list-content-verbose]
-- Images / Diagrams
+- While ES is great for traceability, simple queries can become very complex and inefficient.
+- That's why ES isused in combination with CQRS, a pattern that handles reads and writes in the system with two very distinct entities.
+- ![EES/CQRS](https://cdn-images-1.medium.com/max/2600/1*2IUbZocoe_zT-mSec-crmg.jpeg)
+@ulend
+
+---
+### Projection
+@ul[list-content-verbose]
+- ![Projection](https://cdn-images-1.medium.com/max/1600/1*1oUxSMaXHVuETYiWAG4rcQ.jpeg)
+- `BankAccount` is called a **projection** of the event stream.
+@ulend
+
+---
+### Asynchronous / Availability
+@ul[list-content-verbose]
+- ![Async](https://cdn-images-1.medium.com/max/2400/1*NCP3YktA4Oo86tHncrOXPw.jpeg)
+- Because the event store is asynchronous, the system is able to keep response times short and handle huge traffic with zero impact on the write side.
+- But this creates a potential problem: Write Consistancy / Business Logic (i.e withdrawing insufficient funds.)
+@ulend
+
+---
+### Aggregates
+@ul[list-content-verbose]
+- Aggregates are small stateful components on the write side that receives **commands** produces **events**. 
+- The aggregate uses its state to make business decisions.
+- ![Aggregates](https://cdn-images-1.medium.com/max/2600/1*vBvbCa9qT_Ttl2ToQkvD1w.jpeg)
+- The actor model of Elixir is a perfect fit for these aggregates. A GenServer has a state and receives messages in its mailbox.
 @ulend
 
 ---
 ### Pros 
-@ul[list-content-verbose]
-- When to use
+@ul
+- Traceability
+- Performance
+- Availability
+- Consistency
+- Maintainability
 @ulend
 
 ---
 ### Cons
 @ul[list-content-verbose]
-- When not to use
+- Certain tasks can be alot more complicated. (e.g check that a user email is not already taken.)
+- CQRS/ES rarely fits a whole system, and should be used sparingly. 
+- Can't make breaking changes. Need to maintain versions of events and handle the different versions in aggregates and projections.
+- Works best for systems where the domain is clearly defined and understood. 
 @ulend
 
 ---
@@ -66,7 +99,7 @@
 - *Router:* Maps a command to its corresponding handler function or aggregate module.
 @ulend
 
----
++++
 ### Glossary - Events
 @ul[list-content-verbose]
 - *Event sourcing:* Application state changes are modelled as a stream of domain events. An aggregate’s current state is built by replaying its domain events: `f(state, event) => state`
@@ -75,14 +108,14 @@
 @ulend
 
 
----
++++
 ### Glossary
 @ul[list-content-verbose]
 - *Aggregate:*  Defines a consistency boundary for transactions and concurrency. Aggregates should also be viewed from the perspective of being a "conceptual whole". They are used to enforce invariants in a domain model and to guard against business rule violations. An aggregate is comprised of entities and value objects. All access to the aggregate must go through the entity defined as the aggregate root.
 - *Process manager:* Coordinates one or more aggregates: receives events and dispatches commands. May also track state necessary to route commands to the appropriate aggregate.
 @ulend
 
----
++++
 ### Glossary
 @ul[list-content-verbose]
 - *Projection:* Read model built to support a specific query, often using denormalised data. Projections are cheap and easy to build and rebuild.
