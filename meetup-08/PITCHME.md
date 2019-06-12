@@ -17,8 +17,8 @@
 ### Elixir News
 @ul[list-content-verbose]
 - Elixir 1.9 is out!
-    - Main feature is Releases. This is supposed to be the last core feature. Elixir is now "complete".
-- ![Releases](meetup-08/releases.png)
+    - Main feature is Releases. This is supposed to be the last core feature.
+    - Soft deprecation of `mix.config`.
 @ulend
 
 ---
@@ -49,13 +49,15 @@
 - ![EES/CQRS](https://cdn-images-1.medium.com/max/2600/1*2IUbZocoe_zT-mSec-crmg.jpeg)
 @ulend
 
+
+---?image=https://cdn-images-1.medium.com/max/1600/1*1oUxSMaXHVuETYiWAG4rcQ.jpeg&size=contain
+
 ---
 ### Projection
 @ul[list-content-verbose]
 - `BankAccount` is called a **projection** of the event stream.
+- You can have as many projections as you want for different purposes
 @ulend
-
----?image=https://cdn-images-1.medium.com/max/1600/1*1oUxSMaXHVuETYiWAG4rcQ.jpeg&size=contain
 
 ---
 ### Asynchronous / Availability
