@@ -1,6 +1,6 @@
 ---
 @snap[west]
-###### NYC Functional Programming Reading Group
+###### NYC Functional Programming
 #### @color[#FFF](Event Sourcing and CQRS)
 @snapend
 
@@ -36,8 +36,9 @@
 ---
 ### Event Sourcing and CQRS
 @ul[list-content-verbose]
-- Event Sourcing:
-- CQRS
+- The mantra of ES is that the state of a system is given by all the events that lead to that state.
+- Those events can never be modified once emitted, and are stored in an append-only storage called the event store.
+- ![Event Store](https://cdn-images-1.medium.com/max/1600/1*s3LbOhxnYFC4cKPshlAWcA.jpeg)
 @ulend
 
 ---
@@ -58,6 +59,14 @@
 - When not to use
 @ulend
 
+---
+### Glossary
+@ul[list-content-verbose]
+- *Command:* Used to instruct an application to do something and named in the imperative: register account, transfer funds, mark fraudulent activity. A command is dispatched to its corresponding handler using a router.
+- *Router:* Maps a command to its corresponding handler function or aggregate module.
+@ulend
+
+---
 ### Glossary - Events
 @ul[list-content-verbose]
 - *Event sourcing:* Application state changes are modelled as a stream of domain events. An aggregate’s current state is built by replaying its domain events: `f(state, event) => state`
@@ -65,12 +74,6 @@
 - *Event handler:* Receives every event persisted to the event store. The event store remembers the handler's last seen event to support restarts. The handler must acknowledge receipt of each processed event.
 @ulend
 
----
-### Glossary
-@ul[list-content-verbose]
-- *Command:* Used to instruct an application to do something and named in the imperative: register account, transfer funds, mark fraudulent activity. A command is dispatched to its corresponding handler using a router.
-- *Router:* Maps a command to its corresponding handler function or aggregate module.
-@ulend
 
 ---
 ### Glossary

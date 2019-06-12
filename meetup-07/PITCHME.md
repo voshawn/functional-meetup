@@ -1,6 +1,6 @@
 ---?image=assets/meetup.png&size=auto 100% color=#3023AE
 @snap[west]
-##### Nondeterministic Computing + Logig Programming
+##### Nondeterministic Computing + Logic Programming
 @snapend
 
 ---
