@@ -12,7 +12,6 @@
 - Cons
 - Example
 
-
 ---
 ### What is LiveView?
 @ul[list-content-verbose]
@@ -44,3 +43,4 @@
 
 ---
 ### Demos
+- `https://github.com/chrismccord/phoenix_live_view_example`
