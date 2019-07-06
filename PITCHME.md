@@ -7,3 +7,4 @@
 1. [Code Evaluation](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-06)
 1. [Nondeterministic Computing + Logic Programming](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-07
 1. [Event Sourcing and CQRS](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-08
+1. [Phoenix LiveView](https://gitpitch.com/voshawn/functional-meetup/master?p=meetup-09
