@@ -23,7 +23,7 @@
 
 ---
 ### Compared to React
-![Live View](meetup-09/liveview.png&size=auto)
+![Live View](meetup-09/liveview.png)
 
 ---
 ### Command Query Responsibility Segregation (CQRS)
