@@ -16,8 +16,8 @@
 ### What is LiveView?
 @ul[list-content-verbose]
 - An Elixir library that for building interactive, and bi-directional web apps that do not require javascript.
+- Uses Websockets to get "server side rendering in real time."
 - Removes a boundary between client and server so that development and maintenance is easier. 
-- "Server side rendering in real time."
 @ulend
 
 ---
@@ -40,6 +40,7 @@
 - Doesn't work for mobile apps.
 - No offline support.
 - Not great for big / complex apps with lots of interactions.
+- Uses more memory on the server compared to stateless requests.
 @ulend
 
 ---
