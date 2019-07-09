@@ -5,7 +5,7 @@ defmodule DemoWeb.ClockLive do
   def render(assigns) do
     ~L"""
     <div>
-      <h2 phx-click="boom">It's <%= strftime!(@date, "%r") %></h2>
+      <h2>It's <%= strftime!(@date, "%r") %></h2>
     </div>
     """
   end
@@ -18,10 +18,6 @@ defmodule DemoWeb.ClockLive do
 
   def handle_info(:tick, socket) do
     {:noreply, put_date(socket)}
-  end
-
-  def handle_event("nav", _path, socket) do
-    {:noreply, socket}
   end
 
   defp put_date(socket) do
