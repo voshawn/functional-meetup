@@ -39,7 +39,7 @@
 ---
 ### Turing (imparative) 
 @ul[list-content-verbose]
-- Imperative programming languages from abstractions on top of the Von Neumann computer architecture. 
+- Imperative programming languages are abstractions on top of the Von Neumann computer architecture. 
 - The Von Neumann computer architecture is based on the mathematical model of computation proposed by Turing in 1937: the Turing machine.
 - Fundemental concepts:
     - store
