@@ -11,7 +11,7 @@ defmodule DemoWeb.ClockLive do
   end
 
   def mount(_session, socket) do
-    if connected?(socket), do: :timer.send_interval(1000, self(), :tick)
+    if connected?(socket), do: :timer.send_interval(5000, self(), :tick)
 
     {:ok, put_date(socket)}
   end
